@@ -51,6 +51,7 @@ namespace MatrixCalc
                         Height = (MainGrid.Height) / App.MatrixVal - (100 / App.MatrixVal),
                         BorderBrush = new SolidColorBrush(Colors.Black),
                         Background = new SolidColorBrush(Colors.LightGray),
+                        
                         Tag = (i + 1) * 10 + j + 1 ,
                     };
                     t.GotFocus += TextBox_PreviewMouseDown;
@@ -75,6 +76,7 @@ namespace MatrixCalc
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
         {
+            Calculate.IsEnabled = false;
             try
             {
                 App.Matrix = new int[App.MatrixVal + 1, App.MatrixVal + 1];
@@ -91,10 +93,12 @@ namespace MatrixCalc
                 {
                     DeltaBox_Copy.FontSize = 36;
                 }
+                Calculate.IsEnabled = true;
             }
             catch (Exception)
             {
                 MessageBox.Show("Bad inputs!");
+                Calculate.IsEnabled = true;
             }
 }
         public static int DetCalc(int[,] matrix)

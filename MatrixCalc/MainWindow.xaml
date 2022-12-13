@@ -8,11 +8,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
     <Grid>
-        <Canvas Margin="14,102,14,106">
-            <TextBlock Text="Enter matrix size:" TextAlignment="Center" FontSize="48" FontFamily="Dubai" Height="63" Width="372"/>
-            <TextBox TextAlignment="Center" FontSize="36" FontFamily="Dubai" BorderBrush="Black" Background="#FFD1D1D1" TextChanged="TextBox_TextChanged" Height="64" Canvas.Left="141" Canvas.Top="81" Width="90"/>
-            <TextBlock Text="(max 11)" TextAlignment="Center" FontFamily="Dubai" Height="26" Canvas.Left="144" Canvas.Top="150" Width="84"/>
-            <Button x:Name="StarterButton" Content="SET" Background="#FFFFCA56" FontSize="24" IsEnabled="False" Height="39" Canvas.Left="265" Canvas.Top="94" Width="68" Click="StarterButton_Click"/>
+        <Canvas Margin="0,102,0,106">
+            <TextBlock Text="Enter matrix size:" TextAlignment="Center" FontSize="48" FontFamily="Dubai" Height="63" Width="372" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="14"/>
+            <TextBox TextAlignment="Center" FontSize="36" FontFamily="Dubai" BorderBrush="Black" Background="#FFD1D1D1" TextChanged="TextBox_TextChanged" Height="64" Canvas.Left="155" Canvas.Top="81" Width="90" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Text="(max 11)" TextAlignment="Center" FontFamily="Dubai" Height="26" Canvas.Left="158" Canvas.Top="150" Width="84" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button x:Name="StarterButton" Content="SET" Background="#FFFFCA56" FontSize="24" IsEnabled="False" Height="38" Canvas.Left="282" Canvas.Top="94" Width="68" Click="StarterButton_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
     </Grid>
 </Window>
